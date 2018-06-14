@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Obaju e-commerce template">
+    <meta name="keywords" content="">
+
+    <title>
+        {{title}}
+    </title>
+
+    <link href="src/build/app.css" rel="stylesheet">
+    <script src="src/build/app.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+<body>
+<div class="top-menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6 contacts">+7(989)616-98-89</div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Элефант</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Каталог</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О продукции</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Полезное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 search-btn" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="wrapper">
+    <div class="container">
+        {{#block "content"}}{{/block}}
+    </div>
+</div>
+</body>
+
+
+</html>

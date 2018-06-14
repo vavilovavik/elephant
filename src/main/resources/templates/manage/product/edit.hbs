@@ -1,0 +1,41 @@
+{{#partial "content"}}
+    <h2>Продукт #{{ product.id }} / {{ product.name }}</h2>
+    <form>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-3"><label for="name">Имя</label></div>
+                <div class="col-sm-9">
+                    <input type="text" name="name" value="{{product.name}}" class="form-control" id="name" placeholder="имя продукта">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="type">Тип продукта</label>
+                </div>
+                <div class="col-sm-9">
+                    <select name="type" class="form-control">
+                        <option value="SOAP" {{isSelected "SOAP" product.type}}>Мыло</option>
+                        <option value="COSMETIC" {{isSelected "COSMETIC" product.type}}>Косметика</option>
+                        <option value="PARFUME" {{isSelected "PARFUME" product.type}}>Парфюмерия</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="type">Описание</label>
+                </div>
+                <div class="col-sm-9">
+                    <textarea name="description" class="form-control">
+                        {{product.description}}
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{{/partial}}
+{{>layouts/manage}}

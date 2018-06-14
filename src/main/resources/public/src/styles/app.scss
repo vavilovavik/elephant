@@ -1,0 +1,33 @@
+@import "~bootstrap/scss/bootstrap";
+
+$brand-color: #4fbfa8;
+
+.navbar-light {
+    background: #ffffff;
+}
+
+.wrapper {
+    background: #f0f0f0;
+}
+.top-menu {
+    background: #555555;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 14px;
+    .contacts {
+        text-align: right;
+        font-size: 18px;
+    }
+}
+.search-btn {
+    color: $brand-color;
+    border-color: $brand-color;
+    &:hover {
+        background-color: $brand-color;
+        border-color: $brand-color;
+    }
+}
+
+.footer {
+    background: #e0e0e0;
+}
